@@ -11,14 +11,14 @@ graph LR
     A([Customers]) --> B[store-front<br>Vue.js]
     E([Employees]) --> F[store-admin<br>Vue.js]
     
-    B --> C[Bestbuyorder-service<br>Node.js]
-    B --> D[Bestbuyproduct-service<br>Rust]
+    B --> C[Bestbuy-order-service<br>Node.js]
+    B --> D[Bestbuy-product-service<br>Rust]
     
     F --> D
-    F --> G[Bestbuymakeline-service<br>Go]
-    F --> H[Bestbuyai-service<br>Python]
+    F --> G[Bestbuy-makeline-service<br>Go]
+    F --> H[Bestbuy-ai-service<br>Python]
     
-    C --> I[Bestbuyorder-queue<br>RabbitMQ]
+    C --> I[Bestbuy-order-queue<br>RabbitMQ]
     G --> I
     
     G --> J[(Order Database<br>MongoDB)]
