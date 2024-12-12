@@ -1,10 +1,6 @@
 # Full-Stack Cloud-Native Development  
-## Lab Project Assignment #2: Building a Cloud-Native App for Best Buy
 
 ## **Updated Application Architecture**  
-# Application Architecture Diagram
-
-Below is the architecture diagram for the application:
 
 ```mermaid
 graph LR
