@@ -2,7 +2,7 @@
   <nav>
     <div class="logo">
       <a href="/">
-        <img src="/algonquin-pet-store.png" alt="Algonquin Pet Store Logo">
+        <img src="/bestbuy-logo.png" alt="Best Buy Logo">
       </a>
     </div>
     <button class="hamburger" @click="toggleNav">
@@ -40,28 +40,40 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3c673cd7;
+  background-color: #0046BE;
   color: #fff;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.25rem;
+  padding: 12px 24px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+  height: 60px;
 }
 
 nav img {
-  width: 60px;
-  height: auto;
+  height: 24px;
+  width: auto;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.nav-links a:hover {
+  color: #FFE000;
 }
 
 .hamburger {
@@ -69,26 +81,23 @@ nav img {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
-  margin-top: -40px;
+  padding: 8px;
+  color: #fff;
 }
 
 .hamburger-icon {
   display: block;
-  width: 20px;
+  width: 24px;
   height: 2px;
   background-color: #fff;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .hamburger-icon::before,
 .hamburger-icon::after {
   content: '';
   display: block;
-  width: 20px;
+  width: 24px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -107,19 +116,17 @@ nav img {
   .nav-links {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     right: 0;
-    background-color: #333;
-    padding: 1rem;
+    background-color: #0046BE;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .nav-links--open {
-    display: block;
-  }
-
-  .nav-links--open li {
-    padding: 0.5rem 0;
+    display: flex;
   }
 
   .hamburger {

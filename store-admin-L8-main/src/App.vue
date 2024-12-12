@@ -82,7 +82,6 @@ export default {
         .catch(error => console.error(error));
     },
     async completeOrder(orderId) {      
-      // get the order and update the status
       let order = this.orders.find(order => order.orderId === orderId);
       order.status = 1;
 
@@ -101,7 +100,6 @@ export default {
             alert('Error occurred while processing order')
           } else {
             alert('Order successfully processed')
-            // remove the order from the list
             this.orders = this.orders.filter(order => order.orderId !== orderId);
             this.$router.go(-1);
           }
@@ -117,77 +115,51 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Human BBY Digital", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 120px;
-  padding: 1rem;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0 1rem;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
+  color: #0046BE;
+  margin-top: 80px;
+  padding: 2rem;
+  background-color: #f0f2f4;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-th,
-td {
-  padding: 8px;
+th, td {
+  padding: 12px 16px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.order-detail {
-  text-align: left;
+th {
+  background-color: #f8f9fa;
+  color: #0046BE;
+  font-weight: 600;
 }
 
 button {
-  padding: 10px;
-  background-color: #005f8b;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: #0046BE;
+  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  font-weight: 500;
   height: 42px;
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #005f8b;
+  background-color: #003089;
 }
 
 .action-button {
@@ -199,8 +171,12 @@ button:hover {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .product-form {
@@ -210,6 +186,10 @@ button:hover {
   justify-content: center;
   margin: 2rem auto;
   width: 50%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .form-row {
@@ -217,41 +197,58 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .ai-button {
   margin-left: 10px;
-  padding: 10px 10px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 4px;
   border: none;
-  background-color: #007acc;
-  color: #fff;
+  background-color: #FFE000;
+  color: #0046BE;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .ai-button:hover {
-  background-color: #005f8b;
+  background-color: #FFD100;
 }
 
 textarea {
   width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d2d2d2;
+  resize: vertical;
 }
 
 label {
   text-align: right;
-  margin-right: 10px;
-  width: 100px;
-  font-weight: bold;
+  margin-right: 1rem;
+  width: 120px;
+  font-weight: 600;
+  color: #0046BE;
 }
 
 input {
   width: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d2d2d2;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0046BE;
+}
+
+.order-detail {
+  text-align: left;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 </style>
