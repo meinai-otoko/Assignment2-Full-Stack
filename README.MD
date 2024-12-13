@@ -101,8 +101,17 @@ kubectl apply -f aps-all-in-one.yaml
 | Bestbuy-store-front        | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/store-front-L8-main)        |
 | Bestbuy-virtual-customer   | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-customer-L8-main)   |
 | Bestbuy-virtual-worker     | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-worker-L8-main)     |
-
-
+## Table of Docker Images
+| Service                    | Docker Image Link                                                                                 |
+|----------------------------|-------------------------------------------------------------------------------------------------|
+| Bestbuy-order-service      | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/order-service/general)      |
+| Bestbuy-product-service    | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/product-service/general)    |
+| Bestbuy-ai-service         | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/ai-service/general)         |
+| Bestbuy-makeline-service   | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/makeline-service/general)   |
+| Bestbuy-store-admin        | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/store-admin/general)        |
+| Bestbuy-store-front        | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/store-front/general)        |
+| Bestbuy-virtual-customer   | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-customer-L8-main)   |
+| Bestbuy-virtual-worker     | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-worker-L8-main)  
 
 2. A **Deployment Files** subfolder:  
    - Include all Kubernetes deployment YAML files in a folder named `Deployment Files`.  
