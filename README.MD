@@ -71,7 +71,7 @@ To configure the `aps-all-in-one.yaml` file, replace the placeholders with the r
 - **`AZURE_OPENAI_ENDPOINT`**: Enter the endpoint URL for the GPT-4 deployment.
 - **`AZURE_OPENAI_DALLE_ENDPOINT`**: Enter the endpoint URL for the DALL-E 3 deployment.
 - **`AZURE_OPENAI_DALLE_DEPLOYMENT_NAME`**: Enter the deployment name for DALL-E 3.
- 7. # Step 4: Deploy the ConfigMaps and Secrets
+ 7.  Deploy the ConfigMaps and Secrets
 - **Deploy the ConfigMap for RabbitMQ Plugins:**
     ```bash
     kubectl apply -f config-maps.yaml
