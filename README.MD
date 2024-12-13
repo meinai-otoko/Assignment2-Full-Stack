@@ -60,7 +60,39 @@ The application is a microservices-based architecture designed to handle differe
    - **BestBuy-ai-service (Python)**: Provides advanced functionalities such as customer assistance using a Large Language Model (GPT-4) and generates product images using an Image Generation Model (DALL-E).
 
 ## **Step by Step Instructions to deploy the application in a  Kubernetes cluster**  
-- As pre-requisies you need to fork this repository [GitHub Link]() 
+- 1. As prerequisite you need to fork this repository [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack) 
+- 2. You need to deploy a AKS cluster with one master node and two worker nodes.
+- 3. To enable AI-generated product descriptions and image generation features, you will deploy the required Azure OpenAI Services for GPT-4 (text generation) and DALL-E 3 (image generation). This step is essential to configure the AI Service component in the Best buy application.
+- 4. You then need to base64 Encode the API key which can be found in Keys and Endpoint section of the Azure OpenAI Resource.
+- 5. Update the secrets.yaml file with the encoded API key.
+- 6. Update the `aps-all-in-one.yaml` File
+To configure the `aps-all-in-one.yaml` file, replace the placeholders with the retrieved configurations as follows:
+- **`AZURE_OPENAI_DEPLOYMENT_NAME`**: Enter the deployment name for GPT-4.
+- **`AZURE_OPENAI_ENDPOINT`**: Enter the endpoint URL for the GPT-4 deployment.
+- **`AZURE_OPENAI_DALLE_ENDPOINT`**: Enter the endpoint URL for the DALL-E 3 deployment.
+- **`AZURE_OPENAI_DALLE_DEPLOYMENT_NAME`**: Enter the deployment name for DALL-E 3.
+- 7. # Step 4: Deploy the ConfigMaps and Secrets
+
+- **Deploy the ConfigMap for RabbitMQ Plugins:**
+    ```bash
+    kubectl apply -f config-maps.yaml
+    ```
+
+- **Create and Deploy the Secret for OpenAI API:**
+    - Make sure that you have replaced `Base64-encoded-API-KEY` in `secrets.yaml` with your Base64-encoded OpenAI API key.
+    ```bash
+    kubectl apply -f secrets.yaml
+    ```
+
+- **Verify:**
+    ```bash
+    kubectl get configmaps
+    kubectl get secrets
+    ```
+
+
+
+
 ## **Application Overview**  
 
 The **Best Buy App** must include the following components:  
