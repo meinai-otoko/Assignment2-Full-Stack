@@ -86,6 +86,10 @@ To configure the `aps-all-in-one.yaml` file, replace the placeholders with the r
     kubectl get configmaps
     kubectl get secrets
     ```
+8. Deploy the application
+```bash
+kubectl apply -f aps-all-in-one.yaml
+```
 ## **Application Overview**  
 
 The **Best Buy App** must include the following components:  
