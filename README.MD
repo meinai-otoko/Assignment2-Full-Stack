@@ -4,8 +4,8 @@
 
 ```mermaid
 graph LR
-    A([Customers]) --> B[store-front<br>Vue.js]
-    E([Employees]) --> F[store-admin<br>Vue.js]
+    A([Customers]) --> B[Bestbuy-store-front<br>Vue.js]
+    E([Employees]) --> F[Bestbuy-store-admin<br>Vue.js]
     
     B --> C[Bestbuy-order-service<br>Node.js]
     B --> D[Bestbuy-product-service<br>Rust]
