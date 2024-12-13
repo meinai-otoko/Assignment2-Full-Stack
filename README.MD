@@ -110,8 +110,8 @@ kubectl apply -f aps-all-in-one.yaml
 | Bestbuy-makeline-service   | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/makeline-service/general)   |
 | Bestbuy-store-admin        | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/store-admin/general)        |
 | Bestbuy-store-front        | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/store-front/general)        |
-| Bestbuy-virtual-customer   | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-customer-L8-main)   |
-| Bestbuy-virtual-worker     | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-worker-L8-main)  
+| Bestbuy-virtual-customer   | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/virtual-customer/general)   |
+| Bestbuy-virtual-worker     | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/virtual-worker/general)  
 
 2. A **Deployment Files** subfolder:  
    - Include all Kubernetes deployment YAML files in a folder named `Deployment Files`.  
