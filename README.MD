@@ -34,19 +34,32 @@ graph LR
     class J database
     class K,L external
 ```
+# Application and Architecture Explanation
 
-The application architecture must follow the design principles of the **Algonquin Pet Store (On Steroids)**, but with one key change:  
-- **Order Queue Service** must be implemented as a managed backing service (e.g., Azure Service Bus) rather than an owned service like RabbitMQ.  
+## Application Functionality
+The application is a microservices-based architecture designed to handle different aspects of an e-commerce system for BestBuy. It involves customer interaction (store-front), employee management (store-admin), and backend services for processing orders, managing products, and providing AI functionalities.
 
-You will design, build, and deploy this application in a Kubernetes cluster and demonstrate its functionality.
+## Architecture Explanation
 
----
+1. **User Interactions**:
+   - **Customers** interact with the `store-front` application (built with Vue.js) to browse and purchase products.
+   - **Employees** use the `store-admin` application (also built with Vue.js) to manage orders, products, and the backend services.
 
-## **Assignment Objectives**  
-- Implement a cloud-native application using microservices architecture.   
-- Develop and deploy a full-stack solution for Best Buy using Kubernetes.  
-- Enable AI-powered product descriptions and image generation using GPT-4 and DALL-E.  
----
+2. **Backend Services**:
+   - **BestBuy-order-service (Node.js)**: Handles customer orders, communicates with RabbitMQ (`BestBuy-order-queue`), and ensures reliable order processing.
+   - **BestBuy-product-service (Rust)**: Manages product-related data and inventory.
+   - **BestBuy-makeline-service (Go)**: Handles order processing and preparation, interacting with the order database.
+
+3. **Asynchronous Communication**:
+   - **RabbitMQ (BestBuy-order-queue)**: Ensures asynchronous communication between services, particularly for order processing and coordination.
+
+4. **Database**:
+   - **Order Database (MongoDB)**: Stores all order-related data for processing, analytics, and consistency.
+
+5. **AI and Image Processing**:
+   - **BestBuy-ai-service (Python)**: Provides advanced functionalities such as customer assistance using a Large Language Model (GPT-4) and generates product images using an Image Generation Model (DALL-E).
+
+## **Step by Step Instructions to deploy the application in a  Kubernetes cluster**  
 
 ## **Application Overview**  
 
