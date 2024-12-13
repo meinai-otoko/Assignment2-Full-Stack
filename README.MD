@@ -60,7 +60,7 @@ The application is a microservices-based architecture designed to handle differe
    - **BestBuy-ai-service (Python)**: Provides advanced functionalities such as customer assistance using a Large Language Model (GPT-4) and generates product images using an Image Generation Model (DALL-E).
 
 ## **Step by Step Instructions to deploy the application in a  Kubernetes cluster**  
-
+- As pre-requisies you need to fork this repository [GitHub Link]() 
 ## **Application Overview**  
 
 The **Best Buy App** must include the following components:  
