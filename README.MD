@@ -113,43 +113,10 @@ kubectl apply -f aps-all-in-one.yaml
 | Bestbuy-virtual-customer   | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/virtual-customer/general)   |
 | Bestbuy-virtual-worker     | [GitHub Link](https://hub.docker.com/repository/docker/pascalkc9999/virtual-worker/general)  
 
-2. A **Deployment Files** subfolder:  
-   - Include all Kubernetes deployment YAML files in a folder named `Deployment Files`.  
-   - Ensure these files are clearly named (e.g., `store-front-deployment.yaml`, `order-service-deployment.yaml`).   
-
 ### **2. Demo Video**  
-Record a **5-minute max demo video** showcasing the following:  
-- The application in action after deployment to AKS cluster.  
-- AI-generated product descriptions and images.  
-- Integration with the managed order queue service.  
 
-**Upload the video to YouTube** and include a link to the video in your `README.md` file under a "Demo Video" section.  
 
----
 
-## **Grading Criteria**  
 
-| **Criteria**                           | **Weight** |
-|----------------------------------------|------------|
-| Application Code and Documentation     | 20%        |
-| Integration with Managed Order Queue   | 20%        |
-| AI Integration (GPT-4 and DALL-E)      | 20%        |
-| Kubernetes Deployment                  | 20%        |
-| Demo Video                             | 20%        |
-
----
-
-## **Resources**  
-- **Algonquin Pet Store Repository:** [GitHub Link](https://github.com/ramymohamed10/algonquin-pet-store-on-steroids)  
----
-
-## **Submission Instructions**  
-1. Push your code and deployment files to your GitHub repository.  
-2. Submit the GitHub repository link via Brightspace.  
-
---- 
-
-### **Bonus Task: Implement a CI/CD Pipeline for Each Microservice (2 Bonus Marks)**  
-Set up a **Continuous Integration/Continuous Deployment (CI/CD) pipeline** for all microservices to automate building, and deploying the application.
 
 
