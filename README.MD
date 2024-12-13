@@ -91,7 +91,7 @@ To configure the `aps-all-in-one.yaml` file, replace the placeholders with the r
 kubectl apply -f aps-all-in-one.yaml
 ```
 ## Table of Microservices Repositories
-| **Service**         | **Repository Link**                       |
+       | **Service**         | **Repository Link**                       |
        |---------------------|-------------------------------------------|
        | Store-Front         | `<GitHub Link>`                           |
        | Order-Service       | `<GitHub Link>`                           |
