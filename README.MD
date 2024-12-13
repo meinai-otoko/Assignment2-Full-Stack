@@ -91,16 +91,17 @@ To configure the `aps-all-in-one.yaml` file, replace the placeholders with the r
 kubectl apply -f aps-all-in-one.yaml
 ```
 ## Table of Microservices Repositories
-| Service           | Repository Link     |
-|-------------------|---------------------|
-| Store-Front       | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/order-service-L8-main)    |
-| Order-Service     | [GitHub Link](#)    |
-| Product-Service   | [GitHub Link](#)    |
-| Store-Admin       | [GitHub Link](#)    |
-| Makeline-Service  | [GitHub Link](#)    |
-| AI-Service        | [GitHub Link](#)    |
-| Virtual Customer  | [GitHub Link](#)    |
-| Virtual Worker    | [GitHub Link](#)    |
+| Service                    | Repository Link                                                                                 |
+|----------------------------|-------------------------------------------------------------------------------------------------|
+| Bestbuy-order-service      | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/order-service-L8-main)      |
+| Bestbuy-product-service    | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/product-service-L8-main)    |
+| Bestbuy-ai-service         | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/ai-service-L8-main)         |
+| Bestbuy-makeline-service   | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/makeline-service-L8-main)   |
+| Bestbuy-store-admin        | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/store-admin-L8-main)        |
+| Bestbuy-store-front        | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/store-front-L8-main)        |
+| Bestbuy-virtual-customer   | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-customer-L8-main)   |
+| Bestbuy-virtual-worker     | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/virtual-worker-L8-main)     |
+
 
 
 2. A **Deployment Files** subfolder:  
