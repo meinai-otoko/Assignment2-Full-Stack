@@ -93,7 +93,7 @@ kubectl apply -f aps-all-in-one.yaml
 ## Table of Microservices Repositories
 | Service           | Repository Link     |
 |-------------------|---------------------|
-| Store-Front       | [GitHub Link](#)    |
+| Store-Front       | [GitHub Link](https://github.com/meinai-otoko/Assignment2-Full-Stack/tree/main/order-service-L8-main)    |
 | Order-Service     | [GitHub Link](#)    |
 | Product-Service   | [GitHub Link](#)    |
 | Store-Admin       | [GitHub Link](#)    |
